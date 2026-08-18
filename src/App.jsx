@@ -3,6 +3,7 @@ import { useState } from "react"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import GradeEvaluation from "./pages/GradeEvaluation"
 
 import "./App.css"
 
@@ -22,11 +23,7 @@ function App() {
       )}
 
       {page === "grade" && (
-        <section className="placeholder-page">
-          <span>ACTIVITY 02</span>
-          <h1>Student Grade Evaluation</h1>
-          <p>This activity will be added by the assigned group member.</p>
-        </section>
+        <GradeEvaluation />
       )}
 
       {page === "password" && (
