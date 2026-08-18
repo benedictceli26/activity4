@@ -1,0 +1,222 @@
+.login-page {
+  min-height: calc(100vh - 72px);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 70px 20px;
+
+  background: #eef3f8;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+
+  background: #ffffff;
+
+  border: 1px solid #d9dee6;
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+
+.login-header {
+  padding: 24px;
+
+  background: #214f78;
+  color: #ffffff;
+}
+
+.login-header h1 {
+  margin: 0 0 6px;
+
+  font-size: 21px;
+}
+
+.login-header p {
+  margin: 0;
+
+  font-size: 14px;
+
+  opacity: 0.9;
+}
+
+/* FORM */
+
+.login-form {
+  padding: 28px 24px 24px;
+}
+
+.login-field {
+  margin-bottom: 20px;
+}
+
+.login-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-field input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.login-field input:focus {
+  border-color: #214f78;
+}
+
+.login-field input::placeholder {
+  color: #9ca3af;
+}
+
+/* VALIDATION MESSAGE */
+
+.login-message {
+  margin: -5px 0 16px;
+
+  padding: 10px 12px;
+
+  background: #fff4f4;
+
+  border: 1px solid #edd2d2;
+  border-radius: 6px;
+
+  color: #a33a3a;
+
+  font-size: 12px;
+}
+
+/* LOGIN BUTTON */
+
+.login-button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #214f78;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #183d5e;
+}
+
+/* DEMO ACCOUNT */
+
+.demo-account {
+  margin-top: 22px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5e7eb;
+
+  text-align: center;
+}
+
+.demo-account p {
+  margin: 0 0 8px;
+
+  color: #8a94a3;
+
+  font-size: 11px;
+}
+
+.demo-account span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #748094;
+
+  font-size: 11px;
+}
+
+.demo-account strong {
+  color: #4b5563;
+}
+
+/* SUCCESS */
+
+.login-success {
+  padding: 45px 28px;
+
+  text-align: center;
+}
+
+.login-success h2 {
+  margin: 0 0 10px;
+
+  color: #172033;
+
+  font-size: 24px;
+}
+
+.login-success p {
+  margin: 0 0 25px;
+
+  color: #4d7a5a;
+
+  font-size: 14px;
+}
+
+.logout-button {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #214f78;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 7px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #183d5e;
+}
+
+@media (max-width: 500px) {
+  .login-page {
+    padding: 35px 15px;
+  }
+
+  .login-card {
+    max-width: 100%;
+  }
+}
