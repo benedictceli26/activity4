@@ -1,0 +1,183 @@
+.electricity-page {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 20px;
+  background: #eef3f8;
+}
+
+.electricity-card {
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d9dee6;
+  border-radius: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.electricity-header {
+  padding: 24px;
+  background: #214f78;
+  color: #ffffff;
+}
+
+.electricity-header h1 {
+  margin: 0 0 6px;
+  font-size: 21px;
+}
+
+.electricity-header p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.electricity-form {
+  padding: 28px 24px 24px;
+}
+
+.electricity-field {
+  margin-bottom: 20px;
+}
+
+.electricity-field label {
+  display: block;
+  margin-bottom: 7px;
+  color: #172033;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.electricity-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.electricity-field input:focus {
+  border-color: #214f78;
+}
+
+.electricity-field input::placeholder {
+  color: #9ca3af;
+}
+
+.electricity-error {
+  margin: -5px 0 16px;
+  padding: 10px 12px;
+  background: #fff4f4;
+  color: #a33a3a;
+  border: 1px solid #edd2d2;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.electricity-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.electricity-actions button {
+  padding: 13px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.electricity-calculate-button {
+  background: #214f78;
+  color: #ffffff;
+  border: 1px solid #214f78;
+}
+
+.electricity-calculate-button:hover {
+  background: #183d5e;
+}
+
+.electricity-clear-button {
+  background: #ffffff;
+  color: #214f78;
+  border: 1px solid #9eacba;
+}
+
+.electricity-clear-button:hover {
+  background: #f1f5f9;
+}
+
+.electricity-result {
+  margin: 0 24px 24px;
+  padding: 20px;
+  background: #f2f8f4;
+  border: 1px solid #cfe2d4;
+  border-radius: 8px;
+}
+
+.electricity-result-high {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.electricity-result h2 {
+  margin: 0 0 14px;
+  color: #172033;
+  font-size: 16px;
+}
+
+.electricity-result dl {
+  margin: 0;
+}
+
+.electricity-result dl > div {
+  padding: 9px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.1);
+}
+
+.electricity-result dl > div:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.electricity-result dt {
+  color: #727c89;
+  font-size: 13px;
+}
+
+.electricity-result dd {
+  margin: 0;
+  color: #245c35;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.electricity-result-high dd {
+  color: #b45309;
+}
+
+@media (max-width: 500px) {
+  .electricity-page {
+    padding: 35px 15px;
+  }
+
+  .electricity-card {
+    max-width: 100%;
+  }
+
+  .electricity-actions {
+    grid-template-columns: 1fr;
+  }
+}
