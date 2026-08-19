@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import GradeEvaluation from "./pages/GradeEvaluation"
 import PasswordChecker from "./pages/PasswordChecker"
+import ElectricityBill from "./pages/ElectricityBill"
 
 import "./App.css"
 
@@ -32,11 +33,7 @@ function App() {
       )}
 
       {page === "electricity" && (
-        <section className="placeholder-page">
-          <span>ACTIVITY 04</span>
-          <h1>Electricity Bill Calculator</h1>
-          <p>This activity will be added by the assigned group member.</p>
-        </section>
+        <ElectricityBill />
       )}
 
       {page === "attendance" && (
