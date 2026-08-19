@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import GradeEvaluation from "./pages/GradeEvaluation"
+import PasswordChecker from "./pages/PasswordChecker"
 
 import "./App.css"
 
@@ -27,11 +28,7 @@ function App() {
       )}
 
       {page === "password" && (
-        <section className="placeholder-page">
-          <span>ACTIVITY 03</span>
-          <h1>Password Strength Checker</h1>
-          <p>This activity will be added by the assigned group member.</p>
-        </section>
+        <PasswordChecker />
       )}
 
       {page === "electricity" && (
